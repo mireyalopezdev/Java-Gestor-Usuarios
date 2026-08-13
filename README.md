@@ -19,7 +19,26 @@
 
 
 ## INSTALAR APLICACION
-1. **Clonar el repositorio:**
+1. **CLONAR EL REPOSITORIO:**
    ```bash
-   git clone https://github.com/mireyalopezdev/Java-Gestor-Usuarios.git
+      git clone https://github.com/mireyalopezdev/Java-Gestor-Usuarios.git
    ```
+2. **IMPORTAR LA BD: **
+   ```sql
+      CREATE DATABASE IF NOT EXISTS gestor_usuarios;
+      USE gestor_usuarios;
+      CREATE TABLE IF NOT EXISTS `usuarios` (
+        `iduser` int NOT NULL AUTO_INCREMENT,
+        `user` varchar(100) NOT NULL,
+        `password` varchar(100) NOT NULL,
+        `fecha` timestamp NOT NULL,
+        PRIMARY KEY (`iduser`)
+      ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+   ```
+3. **JBDC**
+      Abre tu proyecto en NetBeans y agrega la driver JDBC ( mysql-connector-j-x.x.x.jar).
+4. **CONEXIÓN**
+      Modifica la conexión en archivo **Conexion.java*.
+      Agrega el usuario, contraseña y la url.
+5. **EJECUTA**
+      Finalmente ya puedes ejecutar la aplicación.
