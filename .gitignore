@@ -22,8 +22,15 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+<<<<<<< HEAD
 
 
 build/ 
 dist/ 
 nbproject/private/ 
+=======
+/build/
+/dist/
+/nbproject/private/
+/nbproject/project.fragment.xml
+>>>>>>> b7662d53380bba52cc91c0e5b731f3ef44197d8b
